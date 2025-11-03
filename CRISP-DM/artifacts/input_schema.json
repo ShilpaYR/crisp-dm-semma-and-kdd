@@ -1,0 +1,76 @@
+{
+  "required": [
+    "Year",
+    "Month",
+    "Week",
+    "Quarter",
+    "Month_sin",
+    "Month_cos",
+    "Week_sin",
+    "Week_cos",
+    "lag1",
+    "roll4",
+    "roll12",
+    "Store",
+    "Dept",
+    "IsHoliday"
+  ],
+  "columns": [
+    {
+      "name": "Year",
+      "dtype": "int32"
+    },
+    {
+      "name": "Month",
+      "dtype": "int32"
+    },
+    {
+      "name": "Week",
+      "dtype": "int64"
+    },
+    {
+      "name": "Quarter",
+      "dtype": "int32"
+    },
+    {
+      "name": "Month_sin",
+      "dtype": "float64"
+    },
+    {
+      "name": "Month_cos",
+      "dtype": "float64"
+    },
+    {
+      "name": "Week_sin",
+      "dtype": "float64"
+    },
+    {
+      "name": "Week_cos",
+      "dtype": "float64"
+    },
+    {
+      "name": "lag1",
+      "dtype": "float64"
+    },
+    {
+      "name": "roll4",
+      "dtype": "unknown"
+    },
+    {
+      "name": "roll12",
+      "dtype": "unknown"
+    },
+    {
+      "name": "Store",
+      "dtype": "int64"
+    },
+    {
+      "name": "Dept",
+      "dtype": "int64"
+    },
+    {
+      "name": "IsHoliday",
+      "dtype": "bool"
+    }
+  ]
+}

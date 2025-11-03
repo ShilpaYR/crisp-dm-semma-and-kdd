@@ -1,0 +1,16 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+plotly
+xgboost
+catboost
+lightgbm
+seaborn
+shap
+optuna
+scikit-optimize
+imbalanced-learn
+jinja2
+pyarrow
+fastparquet

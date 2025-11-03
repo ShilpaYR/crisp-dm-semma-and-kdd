@@ -1,0 +1,33 @@
+{
+  "name": "weekly_sales_fast_rf",
+  "created_utc": "2025-11-02T23:16:00Z",
+  "artifact": "model_rf_fast_pipeline.joblib",
+  "sha256": "f61fa8ffee68397012623b54a816855617d93a30138f787e8a812161bb47d749",
+  "framework": "scikit-learn",
+  "sklearn_version": "1.6.1",
+  "python_version": "3.13.5",
+  "platform": "macOS-14.6-arm64-arm-64bit-Mach-O",
+  "required_input_columns": [
+    "Year",
+    "Month",
+    "Week",
+    "Quarter",
+    "Month_sin",
+    "Month_cos",
+    "Week_sin",
+    "Week_cos",
+    "lag1",
+    "roll4",
+    "roll12",
+    "Store",
+    "Dept",
+    "IsHoliday"
+  ],
+  "target": "Weekly_Sales",
+  "metrics": {
+    "baseline": null,
+    "linear_regression": null,
+    "fast_random_forest": null
+  },
+  "notes": "Preprocessing is inside the pipeline; schema derived from the fitted ColumnTransformer."
+}

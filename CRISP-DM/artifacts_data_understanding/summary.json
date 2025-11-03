@@ -1,0 +1,22 @@
+{
+  "data_shape":{
+    "rows":421570,
+    "cols":5
+  },
+  "columns":[
+    "Store",
+    "Dept",
+    "Date",
+    "Weekly_Sales",
+    "IsHoliday"
+  ],
+  "dtypes":{
+    "Store":"int64",
+    "Dept":"int64",
+    "Date":"datetime64[ns]",
+    "Weekly_Sales":"float64",
+    "IsHoliday":"bool"
+  },
+  "date_min":"2010-02-05 00:00:00",
+  "date_max":"2012-10-26 00:00:00"
+}

@@ -1,0 +1,2 @@
+overall_completeness_pct,per_column_completeness_pct,duplicates_pct,invalid_Weekly_Sales_pct,weekly_missing_overall_ratio,iqr_outliers_count,iqr_outliers_pct
+100.0,"{'Store': 100.0, 'Dept': 100.0, 'Date': 100.0, 'Weekly_Sales': 100.0, 'IsHoliday': 100.0}",0.0,0.30481296107408024,0.0,35521,8.425884194795644

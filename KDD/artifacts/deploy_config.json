@@ -1,0 +1,39 @@
+{
+  "model_name": "Champion",
+  "created_at": "2025-11-03T04:45:34.098102Z",
+  "python": "3.13.5",
+  "platform": "macOS-14.6-arm64-arm-64bit-Mach-O",
+  "user": "shilpayr",
+  "sklearn_version": "1.6.1",
+  "threshold": 0.12,
+  "threshold_origin": "cost-optimized(from Evaluation)",
+  "test_metrics": {
+    "accuracy": 0.49680624556423,
+    "f1": 0.5079805690492714,
+    "roc_auc": 0.8429874189464982,
+    "pr_auc": 0.6496391564229325,
+    "brier": 0.15858990018253785
+  },
+  "raw_feature_columns": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "preprocessed_feature_count": 45
+}
