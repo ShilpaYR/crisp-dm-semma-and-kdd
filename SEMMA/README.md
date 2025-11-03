@@ -68,13 +68,3 @@ It demonstrates the data mining workflow for classification, interpretability, a
 - Cost-based thresholds aligned predictions with business ROI.
 
 ---
-
-## 📦 Repository Structure
-SEMMA/
-│
-├── notebook.ipynb # Full pipeline (Sample→Assess)
-├── critique_prompts.md # Review prompts (GPT-5/Claude)
-├── medium_draft.md # Medium article outline
-├── data/
-├── artifacts/
-└── README.md

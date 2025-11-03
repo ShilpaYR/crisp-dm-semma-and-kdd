@@ -64,13 +64,3 @@ It implements all KDD phases — from selection and preprocessing to data mining
 - Cost-based thresholding achieved better business alignment.
 
 ---
-
-## 📦 Repository Structure
-KDD/
-│
-├── notebook.ipynb # Full code (KDD end-to-end)
-├── critique_prompts.md # Expert review prompts
-├── medium_draft.md # Medium article draft
-├── data/ 
-├── artifacts/ 
-└── README.md

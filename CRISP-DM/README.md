@@ -63,13 +63,3 @@ It walks through every phase — from business understanding to deployment — w
 - Reproducible preprocessing ensures consistent inference results.
 
 ---
-
-## 📦 Repository Structure
-CRISP-DM/
-│
-├── notebook.ipynb # Full pipeline implementation
-├── critique_prompts.md # Prompts for GPT-5/Claude expert review
-├── medium_draft.md # Medium article draft outline
-├── data/
-├── model.joblib
-└── README.md
