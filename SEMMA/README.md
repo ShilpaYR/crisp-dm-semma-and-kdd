@@ -13,6 +13,19 @@ It demonstrates the data mining workflow for classification, interpretability, a
 
 ---
 
+## 🚀 How to Run
+1. **Open a terminal** in the project root:
+   ```bash
+   cd SEMMA
+   jupyter notebook
+2. Open notebook.ipynb in Jupyter Notebook.
+3. Run all cells sequentially from top to bottom.
+   - Each phase corresponds to one CRISP-DM stage.
+   - Cells marked OLD CODE / BEFORE CRITIQUING show the original approach.
+   - The following cells show the REVISED (GPT-5 critiqued) implementation
+
+---
+
 ## 🔁 SEMMA Phases
 
 ### 1. Sample
