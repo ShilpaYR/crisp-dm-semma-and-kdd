@@ -1,18 +1,67 @@
-# SEMMA Project — Step-by-step for a 6th Grader
+# SEMMA Project — Bank Marketing Campaign (UCI)
 
-**Dataset suggestion:** Student Performance (UCI) — predict pass/fail or scores
+This project applies the **SEMMA** methodology (Sample, Explore, Modify, Model, Assess) using the *Bank Marketing* dataset.  
+It demonstrates the data mining workflow for classification, interpretability, and business-focused evaluation.
 
-We’ll do this like a recipe. Follow each step in order. If something feels hard, that’s normal — go slowly and ask for help when stuck.
+---
 
-## The Plan
-**Step 1: Sample** — We will do small tasks and check our work.
-**Step 2: Explore** — We will do small tasks and check our work.
-**Step 3: Modify** — We will do small tasks and check our work.
-**Step 4: Model** — We will do small tasks and check our work.
-**Step 5: Assess** — We will do small tasks and check our work.
+## 📘 Project Overview
+- **Goal:** Predict whether a client will subscribe to a term deposit after a marketing call.
+- **Dataset:** [Bank Marketing (UCI / Kaggle)](https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset)
+- **Target Variable:** `y` (yes/no → 1/0)
+- **Type:** Binary Classification
 
-- After each step, copy a question from `critique_prompts.md` and ask an AI helper to review your work like a strict teacher. Fix things and continue.
-- Keep your code and notes in `notebook.ipynb`.
-- When you finish, use `medium_draft.md` to write your story about the project.
+---
 
-You got this! 💪
+## 🔁 SEMMA Phases
+
+### 1. Sample
+- Loaded `bank-additional-full.csv` (~41K rows, 20+ features).
+- Canonicalized target (`yes`→1, `no`→0).
+- Stratified 60/20/20 split (Train/Valid/Test).
+- Performed representativeness checks (Chi², KS).
+
+### 2. Explore
+- Conducted data audits (missingness, duplicates, drift).
+- Detected policy-leakage variables (e.g., `duration`).
+- Ranked signals using Mutual Information and point-biserial correlation.
+- Built feature audit with suggested actions (drop/merge/bin).
+
+### 3. Modify
+- Dropped leakage & constant columns.
+- Winsorized outliers, merged rare categorical levels.
+- Applied version-safe OneHotEncoder + KFold TargetEncoder.
+- Built unified preprocessing pipeline (`preproc`).
+
+### 4. Model
+- Trained calibrated **Logistic Regression** and **Random Forest**.
+- Used 5-fold CV optimizing **PR-AUC**.
+- Selected champion model by validation PR-AUC with bootstrap CI.
+- Chose threshold by **cost** (FN:FP = 5:1).
+
+### 5. Assess
+- Evaluated champion on holdout test.
+- Reported Accuracy, F1, ROC-AUC, PR-AUC, Brier, ECE, KS.
+- Generated ROC, PR, Calibration, and Lift plots.
+- Built decile table (response, capture, lift).
+- Compared Validation→Test stability.
+
+---
+
+## 🧠 Key Learnings
+- SEMMA emphasizes data refinement before modeling.
+- Leakage prevention (dropping `duration`) drastically improved reliability.
+- Rare-level merging reduced cardinality without hurting accuracy.
+- Cost-based thresholds aligned predictions with business ROI.
+
+---
+
+## 📦 Repository Structure
+SEMMA/
+│
+├── notebook.ipynb # Full pipeline (Sample→Assess)
+├── critique_prompts.md # Review prompts (GPT-5/Claude)
+├── medium_draft.md # Medium article outline
+├── data/
+├── artifacts/
+└── README.md

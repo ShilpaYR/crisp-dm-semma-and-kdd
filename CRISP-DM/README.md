@@ -1,28 +1,64 @@
-# CRISP-DM Project
+# CRISP-DM Project — Retail Sales Forecasting (Walmart)
 
-**Dataset suggestion:** Retail sales forecasting — e.g., *Walmart Sales* (Kaggle)  
-**Goal:** Complete **every phase** of the CRISP-DM lifecycle. Keep all artifacts here.
+This project demonstrates the full **CRISP-DM** lifecycle using the *Walmart Sales Forecasting* dataset from Kaggle.  
+It walks through every phase — from business understanding to deployment — with clear documentation and reproducible code.
 
-## Deliverables
-- Fully executed `notebook.ipynb` with code, EDA, modeling, evaluation, and deployment/demo stub
-- `medium_draft.md` turned into a published Medium post (link from here)
-- `checklist.md` completed and checked
-- Recorded walkthrough video (YouTube link here)
-- All generated artifacts (plots, tables, exported models) committed
+---
 
-## Step-by-step (CRISP-DM)
-- **1. Business Understanding** — implement subtasks, document assumptions, save artifacts
-- **2. Data Understanding** — implement subtasks, document assumptions, save artifacts
-- **3. Data Preparation** — implement subtasks, document assumptions, save artifacts
-- **4. Modeling** — implement subtasks, document assumptions, save artifacts
-- **5. Evaluation** — implement subtasks, document assumptions, save artifacts
-- **6. Deployment** — implement subtasks, document assumptions, save artifacts
+## 📊 Project Overview
+- **Goal:** Predict future weekly sales per store and department to help optimize inventory and staffing.
+- **Dataset:** [Walmart Sales Forecasting (Kaggle)](https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting)
+- **Target Variable:** `Weekly_Sales`
+- **Type:** Regression (time series–like tabular data)
 
-### Suggested dataset sources
-- Kaggle or Papers with Code. Choose a dataset that matches this problem setting and is clean enough to finish in time.
+---
 
-### Notes
-- Always run a critique after each phase using `critique_prompts.md` and iterate.
-- It’s okay if deployment is a *demo* (script, notebook widget, or Streamlit). Document clearly.
-- Consider baseline → tuned model → post-hoc explainability (e.g., SHAP) for stakeholder trust.
+## 🔁 CRISP-DM Phases
 
+### 1. Business Understanding
+- Defined business goal: *Reduce forecast error by 15% vs. last year’s baseline.*
+- Identified success metrics (RMSE, MAPE).
+- Captured constraints (data lag, weekly cadence).
+
+### 2. Data Understanding
+- Loaded and explored 421,570 rows, 5 columns.
+- Identified trends, outliers, and missing values.
+- Visualized seasonal sales patterns and store-level variability.
+
+### 3. Data Preparation
+- Engineered features: lag and rolling averages per (Store, Dept).
+- Encoded categorical variables and scaled numerics.
+- Built reproducible preprocessing pipelines (using `ColumnTransformer`).
+
+### 4. Modeling
+- Benchmarked **Linear Regression** vs. **Random Forest**.
+- Cross-validated RMSE and tuned hyperparameters with `GridSearchCV`.
+
+### 5. Evaluation
+- Compared validation/test RMSE, plotted residuals.
+- Analyzed feature importances and error patterns.
+- Documented model strengths, limitations, and possible improvements.
+
+### 6. Deployment
+- Saved best model (`model.joblib`) and preprocessing pipeline.
+- Created example inference notebook for new data.
+- Outlined options for lightweight Streamlit/Flask deployment.
+
+---
+
+## 🧠 Key Learnings
+- CRISP-DM encourages structured thinking before modeling.
+- Feature engineering had a larger impact than model complexity.
+- Reproducible preprocessing ensures consistent inference results.
+
+---
+
+## 📦 Repository Structure
+CRISP-DM/
+│
+├── notebook.ipynb # Full pipeline implementation
+├── critique_prompts.md # Prompts for GPT-5/Claude expert review
+├── medium_draft.md # Medium article draft outline
+├── data/
+├── model.joblib
+└── README.md
