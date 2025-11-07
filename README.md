@@ -6,6 +6,8 @@ This repo contains three *separate* subprojects — one per methodology — each
 - **KDD** → Suggested dataset: *Telco Customer Churn* (Kaggle).
 - **SEMMA** → Suggested dataset: *Bank Marketing Dataset* (Kaggle).
 
+**NOTE that each project has it's own README.md files, providing instructions to run and explaning the content.**
+
 ## What’s inside
 
 - `CRISP-DM/`, `KDD/`, `SEMMA/` — Each has:
