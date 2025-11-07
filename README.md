@@ -25,6 +25,6 @@ This repo contains three *separate* subprojects — one per methodology — each
 
 ---
 
-Medium Article Link: https://medium.com/
+Medium Article Link: https://medium.com/@shilpa.yelkurramakrishnaiah/from-crisp-dm-to-semma-my-journey-through-three-data-science-methodologies-921e8485db99
 
 ---
