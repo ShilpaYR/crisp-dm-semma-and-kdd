@@ -2,9 +2,9 @@
 
 This repo contains three *separate* subprojects — one per methodology — each using a *different* dataset:
 
-- **CRISP-DM** → Suggested dataset: *Walmart Sales Forecasting* (Kaggle) or similar retail sales dataset.
-- **KDD** → Suggested dataset: *Telco Customer Churn* (Kaggle).
-- **SEMMA** → Suggested dataset: *Bank Marketing Dataset* (Kaggle).
+- **CRISP-DM** → dataset: *Walmart Sales Forecasting* (Kaggle).
+- **KDD** → dataset: *Telco Customer Churn* (Kaggle).
+- **SEMMA** → dataset: *Bank Marketing Dataset* (Kaggle).
 
 **NOTE that each project has it's own README.md files, providing instructions to run and explaning the content.**
 
