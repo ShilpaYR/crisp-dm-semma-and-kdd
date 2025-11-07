@@ -18,6 +18,7 @@ This repo contains three *separate* subprojects — one per methodology — each
   - `notebook.ipynb`
   - `data/`
   - video_explanation.mp4
+- `CMPE 255 - Assignment 4_ CRISP-DM, KDD, SEMMA - Report.pdf`
 - `requirements.txt`
 - `.gitignore` — ignore data and environment clutter
 
