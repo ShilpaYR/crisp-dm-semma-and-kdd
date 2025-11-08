@@ -25,6 +25,9 @@ This repo contains three *separate* subprojects — one per methodology — each
 - See the individual README.md files for more details.
 
 ## Video walkthroughs are available in Google Drive (accessible to SJSU)
+CRISP-DM: https://drive.google.com/file/d/1k9jJA3jxTMsyVDxnYlUygX_OYxQxbGsE/view?usp=drive_link
+KDD: https://drive.google.com/file/d/119zvG5mpEXl3Mywh2UuKU49VZLYLSOz1/view?usp=drive_link
+SEMMA: https://drive.google.com/file/d/1Yp6TSrUJXtIHlEdB8u6IFIff3qKnZBX2/view?usp=drive_link
 https://drive.google.com/drive/folders/1dYmZLYHn8vzptla-qVxfpLVAKSzYpYdG?usp=sharing
 
 ---
