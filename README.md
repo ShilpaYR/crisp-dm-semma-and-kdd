@@ -16,7 +16,6 @@ This repo contains three *separate* subprojects — one per methodology — each
   - `critique_prompts.md`
   - `notebook.ipynb`
   - `data/`
-  - video_explanation.mp4
 - `CMPE 255 - Assignment 4_ CRISP-DM, KDD, SEMMA - Report.pdf`
 - `requirements.txt`
 - `.gitignore` — ignore data and environment clutter
@@ -24,6 +23,9 @@ This repo contains three *separate* subprojects — one per methodology — each
 ## How to use
 
 - See the individual README.md files for more details.
+
+## Video walkthroughs are available in Google Drive (accessible to SJSU)
+https://drive.google.com/drive/folders/1dYmZLYHn8vzptla-qVxfpLVAKSzYpYdG?usp=sharing
 
 ---
 
