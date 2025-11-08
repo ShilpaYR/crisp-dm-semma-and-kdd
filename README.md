@@ -14,7 +14,6 @@ This repo contains three *separate* subprojects — one per methodology — each
   - `README.md` with step-by-step tasks and deliverables
   - `checklist.md` for grading-aligned self-audit
   - `critique_prompts.md`
-  - `medium_draft.md`
   - `notebook.ipynb`
   - `data/`
   - video_explanation.mp4
